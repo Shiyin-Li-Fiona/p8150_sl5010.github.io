@@ -19,5 +19,5 @@ Hi everyone, this is Shiyin Li, and you can call me Fiona. I am a 1st year stude
 
 ## link to dashboard
 
-[dashboard](plotly.html)
+[dashboard](plotlydashboard.html)
 

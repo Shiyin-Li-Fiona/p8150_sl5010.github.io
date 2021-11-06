@@ -1,0 +1,55 @@
+---
+title: "plotlydeshboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(ggridges)
+library(flexdashboard)
+data("rest_inspec")
+## filter or randomly sample from the complete dataset
+rest_inspec_df = 
+  rest_inspec %>%
+  select(boro,critical_flag,cuisine_description,score,grade) %>%
+  filter(!is.na(score),!is.na(grade),cuisine_description=="Italian") 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### boxplot for italian restaurant
+
+```{r}
+box_df = 
+rest_inspec_df %>% 
+  ggplot(aes(x = boro, y = score, fill = boro)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+ ggplotly(box_df) 
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Bar chart for italian restaurant
+
+```{r}
+rest_inspec_df %>% 
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>%      
+  plot_ly(x = ~boro, y = ~n, type = "bar", color = ~boro, alpha = 0.5)
+```
+
+### scatter plot for italian restaurant
+
+```{r}
+rest_inspec_df %>% 
+  plot_ly(
+    x = ~boro, y = ~score, type = "scatter", mode = "markers",color = ~critical_flag, alpha = 0.5)
+```
