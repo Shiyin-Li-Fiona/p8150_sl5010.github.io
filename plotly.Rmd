@@ -6,28 +6,20 @@ flexdashboard::flex_dashboard:
     vertical_layout: fill
 ---
 
-```{r}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 library(ggridges)
 library(flexdashboard)
-```
-
-
-
-
-```{r}
 data("rest_inspec")
-head(rest_inspec)
 ## filter or randomly sample from the complete dataset
 rest_inspec_df = 
   rest_inspec %>%
   select(boro,critical_flag,cuisine_description,score,grade) %>%
   filter(!is.na(score),!is.na(grade),cuisine_description=="Italian") 
-
-
 ```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
@@ -36,6 +28,7 @@ Column {data-width=650}
 
 
 ```{r}
+
 ## boxplot for italian restaurant
 box_df = 
 rest_inspec_df %>% 
@@ -58,7 +51,9 @@ rest_inspec_df %>%
   mutate(boro = fct_reorder(boro, n)) %>%      
   plot_ly(x = ~boro, y = ~n, type = "bar", color = ~boro, alpha = 0.5)
 ```
+
 ### Chart C
+
 ```{r}
 ## scatter plot for italian restaurant
 rest_inspec_df %>% 
