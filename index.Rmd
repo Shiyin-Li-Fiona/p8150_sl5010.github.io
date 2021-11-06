@@ -1,5 +1,5 @@
 ---
-title: "Fiona Li's Resume"
+title: "Fiona Li's website"
 output: 
   html_document:
     toc: true
@@ -11,11 +11,12 @@ output:
 Hi everyone, this is Shiyin Li, and you can call me Fiona. I am a 1st year student at columbia University majoring Biostatistic BS. 
 
 ## This is Fiona's resume
-[resume](resume.html)
+[resume](about.html)
 
 ## Fiona's favorite pet
 
 ![](images/IMG_1857.jpg)
+
 ## link to dashboard
 
 [dashboard](plotly.html)
