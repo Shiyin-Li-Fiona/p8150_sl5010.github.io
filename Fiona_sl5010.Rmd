@@ -1,0 +1,20 @@
+---
+title: "Fiona Li's Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+## This is Fiona's website
+[resume](resume.html)
+
+## Fiona's favorite pet
+
+![](images/IMG_1857.jpg)
+
+## Link to other website
+[github](https://github.com/Shiyin-Li-Fiona)
+
+[email](sl5010@cumc.columbia.edu)

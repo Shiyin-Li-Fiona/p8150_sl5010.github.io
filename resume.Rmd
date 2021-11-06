@@ -1,0 +1,42 @@
+---
+title: "resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# EDUCATION
+
+### Columbia University Biostatistics MS, 9/2021 – 5/2023
+Coursework completed by 5/2022: Principles of Epidemiology, Biostatistical Methods, Probability, Data Science, Biostatistical Methods II, Data Science II, Statistical Computing with SAS, Statistical Inference.
+ 
+### University of Minnesota, Twin Cities Statistics BS, Mathematics BA (5/2021), GPA: 3.919
+Courses: Applied Statistics I, Theory of Statistics II, Principles of Accounting I, Statistical Science, Prob-Stat Theory, Intro to Statistical Computing, Actuarial Math I, General Biology, General Chemistry I & II, Organic Chemistry, Physiology Lab
+
+# RESEARCH EXPERIENCE
+
+### Research on Comparing the Accuracy of Two Models for Minnesota Governor Tim Walz’s Campaign 03/2019-04/2020   Using Mean Squared Error and Cross-Validation Method to verify the accuracy of Regression Tree and Random Forest Method
+  Concluded that the Random Forest model is more accurate and works better.
+Research on Matrix Simulation of Biomedical Imaging 03/2019-04/2020 Worked with faculty professor and Bioinformatics Ph.D. student at the University of Minnesota in supporting their research.
+  Learned practical usage of imaging in clinical research, including image filtering, segmentation using parametric methods, and 3-D image generation
+
+# OTHER WORK EXPERIENCE
+
+### University of Minnesota, Twin Cities Twin Cities, MN Teaching Assistant 05/2019-09/2020 
+Assisted professors in regular teaching activities of two Math and two Statistics courses, including the grading of homework and exams. Received strongly positive feedback from students on help provided.
+
+# LEADERSHIP AND VOLUNTEER EXPERIENCE
+
+### Students Association of Department of Management Science & Engineering in Qingdao University Hosted speech contests, new year festivals, debate contest etc.
+
+### Employment Supporting Association of Business School in Qingdao University
+ Attended on-campus recruitment activities and provided supporting service to participating companies and organizations
+ 
+# ACHIEVEMENTS/AWARDS
+
+UMN CLA Dean’s List
+Passed SOA Exam-P (Probability)
+Member of Phi Beta Kappa Society
+Spring 2020, Fall 2019, Summer 2019 12/2019 05/2021
