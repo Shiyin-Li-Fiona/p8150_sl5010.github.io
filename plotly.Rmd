@@ -14,6 +14,12 @@ library(ggridges)
 library(flexdashboard)
 ```
 
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+
 ```{r}
 data("rest_inspec")
 head(rest_inspec)
@@ -26,6 +32,10 @@ rest_inspec_df =
 
 ```
 
+
+
+### Chart B
+
 ```{r}
 ## boxplot for italian restaurant
 box_df = 
@@ -35,6 +45,10 @@ rest_inspec_df %>%
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
  ggplotly(box_df) 
 ```
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+
 
 ```{r}
 ## Bar chart for italian restaurant
@@ -43,7 +57,7 @@ rest_inspec_df %>%
   mutate(boro = fct_reorder(boro, n)) %>%      
   plot_ly(x = ~boro, y = ~n, type = "bar", color = ~boro, alpha = 0.5)
 ```
-
+### Chart C
 ```{r}
 ## scatter plot for italian restaurant
 rest_inspec_df %>% 
