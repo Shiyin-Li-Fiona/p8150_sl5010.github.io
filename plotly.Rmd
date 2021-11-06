@@ -1,5 +1,5 @@
 ---
-title: "plotly"
+title: "plotlydashboard"
 output: 
   html_document:
     toc: true
@@ -27,7 +27,7 @@ rest_inspec_df =
 ```
 
 ```{r}
-## boxplot
+## boxplot for italian restaurant
 box_df = 
 rest_inspec_df %>% 
   ggplot(aes(x = boro, y = score, fill = boro)) +
@@ -37,11 +37,18 @@ rest_inspec_df %>%
 ```
 
 ```{r}
-
+## Bar chart for italian restaurant
+rest_inspec_df %>% 
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>%      
+  plot_ly(x = ~boro, y = ~n, type = "bar", color = ~boro, alpha = 0.5)
 ```
 
 ```{r}
-
+## scatter plot for italian restaurant
+rest_inspec_df %>% 
+  plot_ly(
+    x = ~boro, y = ~score, type = "scatter", mode = "markers",color = ~critical_flag, alpha = 0.5)
 ```
 
 ```{r}
