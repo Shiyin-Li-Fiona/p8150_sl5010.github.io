@@ -9,8 +9,6 @@ output:
 ## Link to my personal other website
 [github](https://github.com/Shiyin-Li-Fiona)
 
-[email](sl5010@cumc.columbia.edu)
-
 [linkedin](https://www.linkedin.com/in/fiona-li-a425911bb/)
 
 # EDUCATION
